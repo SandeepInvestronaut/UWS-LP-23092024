@@ -1,0 +1,239 @@
+.carousel h5,
+.carousel p {
+  text-align: left;
+  letter-spacing: 0;
+  color: #fff;
+}
+.navbar {
+  background-color: #025b8c;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+.error,
+.error1 {
+  color: red;
+}
+.form01 {
+  background-color: #fff;
+  position: relative;
+  margin-top: -680px;
+  margin-left: 200px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+}
+.form01 input {
+  border-radius: 5px;
+  height: 20px;
+}
+.ftext2 {
+  margin-right: 10px;
+}
+.carousel p {
+  font: 22px/30px Arial;
+}
+.carousel h5 {
+  font: 600 36px/58px Arial;
+}
+.bbcard1 {
+  border-radius: 10px;
+  min-height: 420px;
+  padding: 40px 12px;
+}
+::placeholder {
+  color: #000 !important;
+  opacity: 1;
+}
+.blink {
+  animation: 1s linear infinite blinker;
+  font-family: Arial;
+  font-weight: 700;
+}
+.color-new {
+  background-color: var(--yellow);
+  color: var(--lightviolet) !important;
+}
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 765px) {
+  #banner-form {
+    padding: 40px 0;
+  }
+  .form01 {
+    background-color: #fff;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 20px 50px;
+    width: auto;
+    border-radius: 20px;
+  }
+  #flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #a {
+    order: 2;
+  }
+  #b {
+    order: 1;
+  }
+  .textstart01 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  #banner-form {
+    padding: 40px 0;
+  }
+  .form01 {
+    background-color: #fff;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 20px 50px;
+    width: auto;
+    border-radius: 20px;
+  }
+}
+@media only screen and (min-width: 990px) and (max-width: 1190px) {
+  #banner-form,
+  .form01 {
+    height: auto;
+  }
+  .form01 {
+    margin-top: -500px;
+    width: 60%;
+    border-radius: 20px;
+  }
+}
+@media only screen and (min-width: 1190px) and (max-width: 1450px) {
+  #banner-form,
+  .form01 {
+    height: auto;
+  }
+  .form01 {
+    margin-top: -550px;
+    width: 60%;
+    border-radius: 20px;
+  }
+}
+.carousel-caption {
+  left: 8% !important;
+}
+
+
+
+/*Naturing learners item slider CSS*/
+ 
+  .slider {
+    display: flex;
+    overflow-x: hidden; /* Hide overflow */
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  .slider-inner {
+    display: flex;
+    flex-wrap: nowrap; /* Items won't wrap to the next line */
+    transition: transform 0.5s ease; /* Smooth transition */
+    gap: 20px;
+  }
+  
+  .slider-inner .item {
+    flex: 0 0 auto; /* Items will keep their size and not shrink */
+    width: 30%; /* Auto width to accommodate content */
+    box-sizing: border-box;
+    display: flex;
+    scroll-snap-align: center;
+  }
+ 
+  
+  .belowbanner {
+    text-align: center;
+    padding: 46px !important;
+    border-radius: 20px;
+  }
+  
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #025b8c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  #prev {
+    left: -16px;
+  }
+  
+  #next {
+    right: -16px;
+  }
+  
+  @media (max-width: 768px) {
+    .slider-inner .item {
+      padding: 10px;
+    }
+  
+    .slider-nav {
+      font-size: 20px;
+      padding: 8px;
+    }
+    #prev,#next{
+        display: none;
+    }
+    .belowbanner{
+        margin: 0 !important;
+    }
+  }
+
+  #slider {
+    display: flex;
+    scroll-snap-type: x mandatory; /* Snap to the center of each item */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+ 
+
+/*Co-Curicular activity li css*/  
+.abtlist li{
+    list-style-type:none;
+    position: relative;
+}
+.abtlist li::before {
+    content: '';
+    background-image: url(../img/tick_svg.webp);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -29px;
+    object-fit: cover;
+    top: 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+/*Scroll Button*/
+.scroll-top img{
+    position: relative;
+    left: 31%;
+    top: 6%;
+}
+  
