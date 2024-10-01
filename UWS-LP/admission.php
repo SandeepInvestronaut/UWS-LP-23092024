@@ -1,68 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221882593-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-221882593-1');
-  </script>
-
-  <!-- Meta Pixel Code -->
-  <script>
-    ! function(f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function() {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1546081992575118');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1546081992575118&ev=PageView&noscript=1" loading="lazy" /></noscript>
-  <!-- End Meta Pixel Code -->
-
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PCZJTQD');
-  </script>
-  <!-- End Google Tag Manager -->
-
-
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -83,6 +23,10 @@
   <link rel="stylesheet preload" as="style" href="css/mobo.css" />
   <link rel="stylesheet preload" as="style" href="css/landing-page.css" />
   <link rel="preload" href="img/UWS_School_Building_Back.webp" as="image">
+
+  <link rel="preload" href="img/logo-compressed.webp" as="image">
+  <link rel="preload" href="img/Cambridge-Logo-white.webp" as="image">
+ 
   <?php
   // $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
@@ -128,11 +72,19 @@
       <div class="container">
         <div class="blogo">
           <a class="navbar-brand" href="https://www.universalwisdomschool.in/">
-            <img src="img/logo-compressed.webp" alt="" height="110" class="logo d-inline-block align-text-bottom" width="100%" height="100%" loading="lazy" />
+          <img src="img/logo-compressed.webp" 
+     alt="Logo" 
+     class="logo d-inline-block align-text-bottom" 
+     width="217" 
+     height="110" 
+     srcset="img/logo-small.webp 150w, img/logo-compressed.webp 217w"
+     sizes="(max-width: 768px) 150px, 217px" />
+
+
 
             <div class="" style="
                 text-align: center;
-                font: italic normal bold 16px/2px Arial;
+                font: italic normal bold 13px/2px 'Nunito Sans';
                 letter-spacing: 0.7px;
                 color: #F0D990;
                 padding:0 10px;
@@ -143,13 +95,13 @@
             </div>
           </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
+        </button> -->
+        <div class="collapse navbar-collapse" id="">
           <ul class="navbar-nav ms-auto d-flex justify-content-evently">
 
-            <li class="nav-item active flex-fill">
+            <li class="nav-item flex-fill">
               <span class="ftext d-block"> Call </span>
               <span class="ftext2"> 9168220030 | 9168220020 </span>
             </li>
@@ -343,9 +295,36 @@
       <div class="carousel-item active" style="background: black;">
 
         <!-- <img src="img/slider1.png" class=" d-block w-100" alt="..." id="img1"  width="auto" height="auto" loading="lazy"/> -->
-        <img src="img/UWS_School_Building_Back1.webp" class=" d-block w-100" alt="UWS_School_Building_Back" id="img1 " style="opacity:0.6;" width="100%" height="100%" />
+  <img 
+    src="img/UWS_School_Building_Back.webp" 
+    class="d-block w-100 web_img" 
+    alt="UWS School Building" 
+    id="img1" 
+    style="opacity: 0.6; object-fit: cover;" 
+    width="1519.2" 
+    height="716.55" 
+    srcset="img/UWS_School_Building_Back.webp 768w, img/UWS_School_Building_Back.webp 1280w, img/UWS_School_Building_Back.webp 1920w"
+    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 1920px"
+  />
+  <!-- <img 
+    src="img/UWS_School_Building_Back_mobile.webp" 
+    class="d-block w-100 mob_img" 
+    alt="UWS School Building" 
+    id="img1" 
+    style="opacity: 0.6; object-fit: cover;" 
+    width="1519.2" 
+    height="716.55" 
+    srcset="img/UWS_School_Building_Back_mobile.webp 768w, img/UWS_School_Building_Back_mobile.webp 1280w, img/UWS_School_Building_Back_mobile.webp 1920w"
+    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 1920px"
+  /> -->
 
-        <div class="row">
+
+
+
+
+
+
+        <div class="row" id="enquiry_form">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="carousel-caption d-none d-md-block ">
               <p style="font-size: 32px;">Welcome to</p>
@@ -519,7 +498,18 @@
         </div>
         <div class="col-md-3 pt-1">
           <a href="https://www.universalwisdomschool.in/cambridge-board-a-leading-choice-for-international-education.php" target="_blank">
-            <img src="img/Cambridge-Logo-white.webp" alt="" style="width: 100%;margin-left:-30px;" width="100%" height="100%" loading="lazy">
+          <img 
+  src="img/Cambridge-Logo-white.webp" 
+  alt="Logo" 
+  width="268" 
+  height="80" 
+  srcset="img/logo-small.webp 150w, img/Cambridge-Logo-white.webp 268w" 
+  sizes="(max-width: 768px) 150px, 268px" />
+
+
+
+
+
           </a>
         </div>
         <!-- <div class="col-md-3 text-sm-end text-start">
@@ -541,12 +531,12 @@
 
   <!-- Start belowBanner section -->
   <section>
-    <div class="container naturing_learners">
+    <div class="naturing_learners">
       <div class="row ">
         <dic class="col-md-12">
           <h2 data-aos="fade-up" class="mb-2 mb-md-5" style="
                 text-align: center;
-                font: italic normal bold 36px/68px Arial;
+                font: italic normal bold 36px/68px 'Nunito Sans';
                 color: #025B8C;
               ">
             Nurturing Learners for Life!
@@ -706,7 +696,7 @@
             <!-- The Vishwakarma Purple Educational Trust is thrilled to announce the opening of its third school, a premium international school in Pune. Universal Wisdom School, Balewadi is a proposed IB Continuum and Cambridge School in Balewadi, Pune, offering IB and Cambridge programmes*. It offers truly top-notch facilities and is proud of having a passionate and competent academic team. Our team comprises a healthy mix of expatriates and locals, bringing a true sense of international mindedness and multicultural perspectives. </p> -->
             <!-- The Vishwakarma Purple Educational Trust is thrilled to announce the opening of its third school, a premium international school in Pune. Universal Wisdom School (UWS), Balewadi is an International Curricula School in Balewadi, Pune, offering International Curricula programmes. It offers truly top-notch facilities and is proud of having a passionate and competent academic team. Our team comprises a healthy mix of expatriates and locals, bringing a true sense of international mindedness and multicultural perspectives. -->
             Located in Balewadi, Pune, Universal Wisdom School (UWS) is a premium IB PYP Candidate* & Cambridge School backed by the Vishwakarma Purple Educational Trust. Our school, equipped with state-of-the-art infrastructure and facilities and a passionate and competent academic team, promotes the holistic development of our students. We aim to empower them to become global citizens, prepared to face any challenge and committed to making the world a better place. We bring the most rigorous international standards and approaches that foster international mindedness, deeply rooted in Indian values.
-          <div data-aos="fade-up" class="mt-5">
+          <!-- <div data-aos="fade-up" class="mt-5">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="true">
@@ -735,7 +725,21 @@
                 understanding and celebrate differences as global citizens.
               </div>
             </div>
-          </div>
+          </div> -->
+
+
+                <!-- About The School Tab Section-->
+
+                <div class="tabs mt-5">
+  <ul id="tab-list" class="tab-buttons">
+    <!-- Tabs will be inserted here dynamically -->
+  </ul>
+
+  <div id="tab-content" class="tab-content">
+    <!-- Content will be inserted here dynamically -->
+  </div>
+</div>
+
 
           <div data-aos="fade-up" class="mt-1">
             <!-- <p class="text-muted fs-6 fst-italic">*Proposed</p> -->
@@ -769,14 +773,14 @@
   <!--End downloadbroucher-->
   <!-- Start principal  section -->
   <section>
-    <div class="container">
+    <div class="container leadership_container">
       <div class="row ">
         <div class="col-md-2 text-start textstart01">
           <img data-aos="fade-right" src="assets/img/about/leadership/Ana-Dominguez.webp" class=" img-fluid" alt="" style="height:auto; float:center;" width="auto" height="auto" loading="lazy" />
         </div>
         <div class="col-md-10 pl-2 pr-4">
-          <h5 data-aos="fade-up" class="text-start textstart01" style="font-size: 20px; ">Ms. Ana Dominguez</h5>
-          <p data-aos="fade-up" style="font-size: 16px; line-height: 1.4;">
+          <h5 data-aos="fade-up" class="text-start textstart01" style="font-size: 20px;">Ms. Ana Dominguez</h5>
+          <p data-aos="fade-up" style="font-size: 16px; line-height: 1.4; font: bold 16px / 25px 'Nunito Sans';">
             Principal <br />Universal Wisdom School (UWS), Balewadi
           </p>
 
@@ -842,7 +846,7 @@
 
       <!-- <div class="row mt-4">
         <div class="col-md-12">
-          <p data-aos="fade-up" style="color: #000000; font: normal normal bold 18px/29px Arial">
+          <p data-aos="fade-up" style="color: #000000; font: normal normal bold 18px/29px 'Nunito Sans'">
             <strong>From the Principal’s desk..</strong>
           </p>
           <br />
@@ -851,7 +855,7 @@
             <p data-aos="fade-up">Welcome to Universal Wisdom School, Balewadi!</p>
             <p data-aos="fade-up" style="
                   color: #1d252d;
-                  font: italic normal bold 18px/29px Arial;
+                  font: italic normal bold 18px/29px 'Nunito Sans';
                 ">
               <strong data-aos="fade-up"><em>
                   Lao Tzu said: “The journey of a thousand miles begins with one step,” and we are thrilled to begin our educational journey in the academic year 22-23.</em></strong>
@@ -875,7 +879,7 @@
       <div class="row " style="line-height: 80%;" id=flex>
         <div class="col-md-10" id="a">
           <h5 data-aos="fade-up" class="text-start textstart01" style="font-size: 20px;">Ms. Sarabjeet Kaur</h5>
-          <p data-aos="fade-up" style="font-size: 16px; line-height: 1.4">
+          <p data-aos="fade-up" style="font-size: 16px; line-height: 1.4;font: bold 16px / 25px 'Nunito Sans';">
             Vice Principal <br />Universal Wisdom School (UWS), Balewadi
           </p>
           <p data-aos="fade-up" style="font-size: 16px; line-height: 1.4">
@@ -991,7 +995,7 @@
   <!-- Start Curriculum section -->
   <section class="cream">
     <div class="container">
-      <div class="row mt-3">
+      <div class="row">
         <div class="col-md-12">
           <h6 data-aos="fade-up">Curricula</h6>
 
@@ -1248,57 +1252,21 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-md-12">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="
-                box-shadow: 0px 3px 30px #00000029;
-                background-color: #00c9a9;
-              ">
-            <div class="carousel-inner">
-              <!-- <div class="carousel-item active">
-                <img src="img/infrastructure/01.webp" class=" d-block " style="width:100%;height:620px;" alt="..." width="auto" height="auto" loading="lazy"/>
-              </div> -->
-              <div class="carousel-item active">
-                <img src="img/infrastructure/02.webp" class=" d-block " style="width:100%;height:620px;" alt="..." width="auto" height="auto" loading="lazy" />
-              </div>
-              <div class="carousel-item ">
-                <img src="img/infrastructure/03.webp" class=" d-block " style="width:100%;height:620px;" alt="..." width="auto" height="auto" loading="lazy" />
-              </div>
-              <div class="carousel-item ">
-                <img src="img/infrastructure/04.webp" class=" d-block " style="width:100%;height:620px;" alt="..." width="auto" height="auto" loading="lazy" />
-              </div>
-              <div class="carousel-item ">
-                <img src="img/infrastructure/05.webp" class=" d-block " style="width:100%;height:620px;" alt="..." width="auto" height="auto" loading="lazy" />
-              </div>
-              <div class="carousel-item ">
-                <img src="img/infrastructure/06.webp" class=" d-block " style="width:100%;height:620px;" alt="..." width="auto" height="auto" loading="lazy" />
-              </div>
+       
+                <!-- INFRASTRUCTURE IMAGE SLIDER -->
+
+ 
+                <div class="infra-slider-wrapper">
+    <div class="infra-image-slider" id="infra-image-slider">
+      <!-- Images will be dynamically inserted by JavaScript -->
+    </div>
+
+    <button class="infra-prev" id="infraPrevBtn">&#10094;</button>
+    <button class="infra-next" id="infraNextBtn">&#10095;</button>
+  </div>
 
 
 
-              <!-- <div class="carousel-item">
-                <img src="img/2.png" class=" d-block w-100" alt="..." width="auto" height="auto" loading="lazy"/>
-              </div>
-              <div class="carousel-item">
-                <img src="img/3.png" class=" d-block w-100" alt="..." width="auto" height="auto" loading="lazy"/>
-              </div>
-              <div class="carousel-item">
-                <img src="img/4.png" class=" d-block w-100" alt="..." width="auto" height="auto" loading="lazy"/>
-              </div>
-              <div class="carousel-item">
-                <img src="img/5.png" class=" d-block w-100" alt="..." width="auto" height="auto" loading="lazy"/>
-              </div> -->
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
         <div class="col-md-12 mt-5">
           <!-- <h6>Proposed School</h6> -->
 
@@ -1737,7 +1705,7 @@
               <div class="row">
                 <div class="col-md-5 d-flex">
                   <div class="float-start ficon">
-                    <img src="img/location.webp" alt="location">
+                    <img src="img/location.webp" alt="location" width="20px" height="20px">
                   </div>
                   <div class="ms-2">
                     <span class="ftext d-block"> Address </span>
@@ -1751,7 +1719,7 @@
                 <div class="col-md-6">
                   <div class="col-md-12 d-flex ">
                     <div class="float-start ficon">
-                      <img src="img/phone.webp" alt="location">
+                      <img src="img/phone.webp" alt="location" width="20px" height="20px">
                     </div>
                     <div class="ms-2 ">
                       <span class="ftext d-block"> Call </span>
@@ -1760,7 +1728,7 @@
                   </div>
                   <div class="col-md-12 pt-4 d-flex align-items-baseline">
                     <div class="float-start ficon">
-                      <img src="img/email.webp" alt="location">
+                      <img src="img/email.webp" alt="location" width="20px" height="20px">
                     </div>
                     <div class="ms-2">
                       <span class="ftext d-block"> Email </span>
@@ -1800,7 +1768,7 @@
               </div>
 
             </div>
-            <div class="col-md-5" style="display:flex; justify-content:right;margin-bottom:40px;">
+            <div class="col-md-5 iframe" style="display:flex; justify-content:right;margin-bottom:40px;">
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.145592150008!2d73.7594903148934!3d18.567473787381648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b951713d30e3%3A0x54a5e05dc6e54bfe!2sUniversal%20Wisdom%20School%20Proposed%20IB%20and%20Cambridge%20School%20(Balewadi)!5e0!3m2!1sen!2sin!4v1652770144914!5m2!1sen!2sin" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -1838,6 +1806,12 @@
         </div>
       </div>
     </div>
+
+
+         
+
+
+
     <script>
       window.addEventListener('load', function() {
         if (window.location.pathname == '/thank-you.php') {
@@ -1851,16 +1825,16 @@
   <!-- End  Footer-->
   <a href="#" class="scroll-top" alt="Scroll To Top" title="Scroll To Top"><img src="img\top_arrow.webp" alt=""></a>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+   
 
   <!--   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script defer src="https://www.google.com/recaptcha/api.js?render=6LfeJGoeAAAAAEBj2LGr08qBzKZGSLXlKAukdX0c"></script>
@@ -1969,6 +1943,8 @@
 
   </script>
 </footer>
+
+
 
 
 </html>
